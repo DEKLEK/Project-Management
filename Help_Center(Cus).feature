@@ -1,4 +1,4 @@
-Feature: Help_Center_Admin
+Feature: Help_Center(Cus)
 
   Scenario: PM_HC_C00 : ทดสอบการเข้าสู่เว็บไซต์
     Given เปิดเว็บไซต์ PMRP "http://203.154.184.162:5001/SignIn"
@@ -15,70 +15,70 @@ Feature: Help_Center_Admin
     When เลือกข้อมูล Product
     When เลือกข้อมูล Type of Chat
     When เลือกข้อมูล Ticket Status
-    When คลิกปุ่ม Search
+    When คลิกปุ่ม Search ของหน้า Cus
 
   Scenario: PM_HC_C03 : ทดสอบการค้นหาข้อมูลที่ไม่มีอยู่
     When กรอกข้อมูลค้นหา Search2
-    When คลิกปุ่ม Search2
+    When คลิกปุ่ม Search2 ของหน้า Cus
 
   Scenario: PM_HC_C04 : ทดสอบการค้นหา Search
     When กรอกข้อมูลค้นหา Search3
-    When คลิกปุ่ม Search3
+    When คลิกปุ่ม Search3 ของหน้า Cus
 
   Scenario: PM_HC_C05 : ทดสอบการค้นหา Date
     When เลือกข้อมูลช่วงวันที่ ใน Date2
-    When คลิกปุ่ม Search4
+    When คลิกปุ่ม Search4 ของหน้า Cus
 
   Scenario: PM_HC_C06 : ทดสอบการค้นหา Product
     When เลือกข้อมูล Product2
-    When คลิกปุ่ม Search5
+    When คลิกปุ่ม Search5 ของหน้า Cus
 
   Scenario: PM_HC_C07 : ทดสอบการค้นหา Type of Chat
     When เลือกข้อมูล Type of Chat2
-    When คลิกปุ่ม Search6
+    When คลิกปุ่ม Search6 ของหน้า Cus
 
   Scenario: PM_HC_C08 : ทดสอบการค้นหา Ticket Status
     When เลือกข้อมูล Ticket Status2
-    When คลิกปุ่ม Search7
+    When คลิกปุ่ม Search7 ของหน้า Cus
 
   Scenario: PM_HC_C09 : ทดสอบการค้นหาข้อมูลในช่อง Search กรณ๊พิมพ์ไม่ครบ
     When กรอกข้อมูลค้นหา Search4
-    When คลิกปุ่ม Search8
+    When คลิกปุ่ม Search8 ของหน้า Cus
 
   Scenario: PM_HC_C10 : ทดสอบการค้นหาข้อมูลในช่อง Search กรณ๊เว้นวรรคก่อนพิมพ์ข้อความ
     When กรอกข้อมูลค้นหา Search5
-    When คลิกปุ่ม Search9
+    When คลิกปุ่ม Search9 ของหน้า Cus
 
   Scenario: PM_HC_C11 : ทดสอบการค้นหาด้วย Dropdown list ช่อง Product เลือกหลายรายการ
     When เลือกข้อมูล Product3
-    When คลิกปุ่ม Search10
+    When คลิกปุ่ม Search10 ของหน้า Cus
 
   Scenario: PM_HC_C12 : ทดสอบการค้นหาด้วย Dropdown list ช่อง Type Of Chat เลือกที่ละหลายการ
     When เลือกรายการ Type Of Chat : แจ้งปัญหาการใช้งาน
-    When คลิกปุ่ม Search11
+    When คลิกปุ่ม Search11 ของหน้า Cus
     When ลบหลายการ Type Of Chat : แจ้งปัญหาการใช้งาน
     When เลือกรายการ Type Of Chat : สอบถามการใช้งาน
-    When คลิกปุ่ม Search12
+    When คลิกปุ่ม Search12 ของหน้า Cus
     When ลบหลายการ Type Of Chat : สอบถามการใช้งาน
 
   Scenario: PM_HC_C13 : ทดสอบการค้นหาด้วย Dropdown list ช่อง Type Of Chat เลือกหลายรายการ
     When เลือกรายการ Type Of Chat
-    When คลิกปุ่ม Search13
+    When คลิกปุ่ม Search13 ของหน้า Cus
 
   Scenario: PM_HC_C14 : ทดสอบการค้นหาด้วย Dropdown list ช่อง Ticket Status เลือกที่ละหลายรายการ
     When เลือกรายการ Ticket Status : Processing
-    When คลิกปุ่ม Search14
+    When คลิกปุ่ม Search14 ของหน้า Cus
     When ลบหลายการ Ticket Status : Processing
     When เลือกรายการ Ticket Status : Reopen
-    When คลิกปุ่ม Search15
+    When คลิกปุ่ม Search15 ของหน้า Cus
     When ลบหลายการ Ticket Status : Reopen
     When เลือกรายการ Ticket Status : Success
-    When คลิกปุ่ม Search16
+    When คลิกปุ่ม Search16 ของหน้า Cus
     When ลบหลายการ Ticket Status : Success
 
   Scenario: PM_HC_C15 : ทดสอบการค้นหาด้วย Dropdown list ช่อง Ticket Status เลือกหลายรายการ
     When เลือกรายการ Ticket Status
-    When คลิกปุ่ม Search17
+    When คลิกปุ่ม Search17 ของหน้า Cus
 
   Scenario: PM_HC_C16 : ทดสอบการกดปุ่ม Clear เมื่อข้อมูล
     When กรอกข้อมูลค้นหา Search6
@@ -86,7 +86,7 @@ Feature: Help_Center_Admin
     When เลือกข้อมูล Product4
     When เลือกข้อมูล Type of Chat3
     When เลือกข้อมูล Ticket Status3
-    When คลิกปุ่ม Search18
+    When คลิกปุ่ม Search18 ของหน้า Cus
     When คลิกปุ่ม Clear
 
   Scenario: PM_HC_C17 : ทดสอบการกดปุ่ม Clear เมื่อไม่มีข้อมูล
@@ -128,7 +128,7 @@ Feature: Help_Center_Admin
 
   Scenario: PM_HC_C24 : ทดสอบการเลือก Chat
     When เลือกข้อมูล Product5
-    When คลิกปุ่ม Search19
+    When คลิกปุ่ม Search19 ของหน้า Cus
     When เลือกแชทที่ต้องการมา
 
   Scenario: PM_HC_C25 : ทดสอบพิมพ์ข้อความและส่งไฟล์ ใน Chat

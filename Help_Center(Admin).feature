@@ -48,31 +48,31 @@ Feature: Help_Center_Admin
 
   Scenario: PM_HC09 : ทดสอบการค้นหาด้วยชื่อที่แสดงในรายการ Chat
     When กรอกข้อมูลค้นหา
-    When คลิกปุ่ม Search
+    When คลิกปุ่ม Search ของหน้า admin
 
   Scenario: PM_HC10 : ทดสอบการค้นหาด้วยชื่อที่ไม่แสดงในรายการ Chat
     When กรอกข้อมูลค้นหา2
-    When คลิกปุ่ม Search2
+    When คลิกปุ่ม Search2 ของหน้า admin
 
   Scenario: PM_HC11 : ทดสอบการค้นหาด้วย Date Picker
     When เลือก Start date - End date
-    When คลิกปุ่ม Search3
+    When คลิกปุ่ม Search3 ของหน้า admin
 
   Scenario: PM_HC12 : ทดสอบการค้นหาด้วย Dropdown list ช่อง Type Of Chat
     When เลือกรายการ Type Of Chat
-    When คลิกปุ่ม Search4
+    When คลิกปุ่ม Search4 ของหน้า admin
 
   Scenario: PM_HC13 : ทดสอบการค้นหาด้วย Dropdown list ช่อง Type Of Chat เลือก 2 รายการ
     When เลือกรายการ Type Of Chat2
-    When คลิกปุ่ม Search5
+    When คลิกปุ่ม Search5 ของหน้า admin
 
   Scenario: PM_HC14 : ทดสอบการค้นหาด้วย Dropdown list ช่อง Ticket Status
     When เลือกรายการ Ticket Status
-    When คลิกปุ่ม Search6
+    When คลิกปุ่ม Search6 ของหน้า admin
 
   Scenario: PM_HC15 : ทดสอบการค้นหาด้วย Dropdown list ช่อง Ticket Status เลือก 3 รายการ
     When เลือกรายการ Ticket Status2
-    When คลิกปุ่ม Search7
+    When คลิกปุ่ม Search7 ของหน้า admin
 
   Scenario: PM_HC16 : ทดสอบการกดปุ่ม Clear เมื่อกรอกข้อมูลทุกช่อง
     When กรอกข้อมูลช่อง Seach, Date, Type Of Chat, Ticket Status
@@ -80,23 +80,23 @@ Feature: Help_Center_Admin
 
   Scenario: PM_HC17 : ทดสอบการกดปุ่ม Clear เมื่อกรอกข้อมูลทุกช่อง
     When กรอกข้อมูลช่อง Seach, Date, Type Of Chat, Ticket Status2
-    When คลิกปุ่ม Search8
+    When คลิกปุ่ม Search8 ของหน้า admin
     When คลิกปุ่ม Clear2
 
   Scenario: PM_HC18 : ทดสอบการกดคลิกรายการ Chat
     When กรอกข้อมูลค้นหา3
-    When คลิกปุ่ม Search9
+    When คลิกปุ่ม Search9 ของหน้า admin
     When คลิกรายการ Chat
 
   Scenario: PM_HC19 : ทดสอบการแสดงผล tooltip
     When กรอกข้อมูลค้นหา4
-    When คลิกปุ่ม Search10
+    When คลิกปุ่ม Search10 ของหน้า admin
     When คลิกรายการ Chat2
     When นำ cursor ไปที่ Icon +
 
   Scenario: PM_HC20 : ทดสอบการส่งข้อความผ่านช่อง Message
     When กรอกข้อมูลค้นหา5
-    When คลิกปุ่ม Search11
+    When คลิกปุ่ม Search11 ของหน้า admin
     When คลิกรายการ Chat3
     When กรอกข้อความในช่อง Type your message…
     When คลิกปุ่ม icon ส่งข้อความหริอกด Enter

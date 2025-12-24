@@ -154,7 +154,7 @@ When("กรอกข้อมูลค้นหา", { timeout: 300000 }, async
   await page.waitForTimeout(1000);
 })
 
-When("คลิกปุ่ม Search", { timeout: 300000 }, async () => {
+When("คลิกปุ่ม Search ของหน้า admin", { timeout: 300000 }, async () => {
   await page.getByRole('button', { name: 'search Search' }).click();
   await page.getByRole('button', { name: 'delete Clear' }).click();
 })
@@ -165,7 +165,7 @@ When("กรอกข้อมูลค้นหา2", { timeout: 300000 }, asyn
   await page.waitForTimeout(1000);
 })
 
-When("คลิกปุ่ม Search2", { timeout: 300000 }, async () => {
+When("คลิกปุ่ม Search2 ของหน้า admin", { timeout: 300000 }, async () => {
   await page.getByRole('button', { name: 'search Search' }).click();
   await page.getByRole('button', { name: 'delete Clear' }).click();
 })
@@ -177,7 +177,7 @@ When("เลือก Start date - End date", { timeout: 300000 }, async () => {
   await page.getByText('30').nth(1).click();
 })
 
-When("คลิกปุ่ม Search3", { timeout: 300000 }, async () => {
+When("คลิกปุ่ม Search3 ของหน้า admin", { timeout: 300000 }, async () => {
   await page.getByRole('button', { name: 'search Search' }).click();
   await page.getByRole('button', { name: 'delete Clear' }).click();
 })
@@ -190,7 +190,7 @@ When("เลือกรายการ Type Of Chat", { timeout: 300000 }, asyn
   await page.waitForTimeout(1000);
 })
 
-When("คลิกปุ่ม Search4", { timeout: 300000 }, async () => {
+When("คลิกปุ่ม Search4 ของหน้า admin", { timeout: 300000 }, async () => {
   await page.getByRole('button', { name: 'search Search' }).click();
   await page.getByRole('button', { name: 'delete Clear' }).click();
   await page.locator('.ant-select-selector').first().click();
@@ -209,7 +209,7 @@ await page.locator('.ant-select-selector').first().click();
   await page.waitForTimeout(1000);
 })
 
-When("คลิกปุ่ม Search5", { timeout: 300000 }, async () => {
+When("คลิกปุ่ม Search5 ของหน้า admin", { timeout: 300000 }, async () => {
   await page.getByRole('button', { name: 'search Search' }).click();
   await page.getByRole('button', { name: 'delete Clear' }).click();
 })
@@ -222,7 +222,7 @@ When("เลือกรายการ Ticket Status", { timeout: 300000 }, asy
   await page.waitForTimeout(1000);
 })
 
-When("คลิกปุ่ม Search6", { timeout: 300000 }, async () => {
+When("คลิกปุ่ม Search6 ของหน้า admin", { timeout: 300000 }, async () => {
   await page.getByRole('button', { name: 'search Search' }).click();
   await page.getByRole('button', { name: 'delete Clear' }).click();
   await page.locator('div:nth-child(2) > div > .ant-select > .ant-select-selector').click();
@@ -247,7 +247,7 @@ When("เลือกรายการ Ticket Status2", { timeout: 300000 }, as
   await page.waitForTimeout(1000);
 })
 
-When("คลิกปุ่ม Search7", { timeout: 300000 }, async () => {
+When("คลิกปุ่ม Search7 ของหน้า admin", { timeout: 300000 }, async () => {
   await page.getByRole('button', { name: 'search Search' }).click();
   await page.getByRole('button', { name: 'delete Clear' }).click();
 })
@@ -290,7 +290,7 @@ When("กรอกข้อมูลช่อง Seach, Date, Type Of Chat, Tick
   await page.getByText('ProcessingReopenSuccess+ 2').click();
 })
 
-When("คลิกปุ่ม Search8", { timeout: 300000 }, async () => {
+When("คลิกปุ่ม Search8 ของหน้า admin", { timeout: 300000 }, async () => {
   await page.getByRole('button', { name: 'search Search' }).click();
 })
 
@@ -303,7 +303,7 @@ When("กรอกข้อมูลค้นหา3", { timeout: 300000 }, asyn
   await page.locator('#input_text_search').fill('Hello');
 })
 
-When("คลิกปุ่ม Search9", { timeout: 300000 }, async () => {
+When("คลิกปุ่ม Search9 ของหน้า admin", { timeout: 300000 }, async () => {
   await page.getByRole('button', { name: 'search Search' }).click();
 })
 
@@ -321,7 +321,7 @@ When("กรอกข้อมูลค้นหา4", { timeout: 300000 }, asyn
   await page.locator('#input_text_search').fill('Hi');
 })
 
-When("คลิกปุ่ม Search10", { timeout: 300000 }, async () => {
+When("คลิกปุ่ม Search10 ของหน้า admin", { timeout: 300000 }, async () => {
   await page.getByRole('button', { name: 'search Search' }).click();
 })
 
@@ -341,7 +341,7 @@ When("กรอกข้อมูลค้นหา5", { timeout: 300000 }, asyn
   await page.locator('#input_text_search').fill('Hello');
 })
 
-When("คลิกปุ่ม Search11", { timeout: 300000 }, async () => {
+When("คลิกปุ่ม Search11 ของหน้า admin", { timeout: 300000 }, async () => {
   await page.getByRole('button', { name: 'search Search' }).click();
 })
 

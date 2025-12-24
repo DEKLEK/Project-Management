@@ -58,7 +58,7 @@ When("เลือกข้อมูล Ticket Status", { timeout: 300000 }, asy
     await page.getByTitle('Processing').click();
 });
 
-When("คลิกปุ่ม Search", { timeout: 300000 }, async () => {
+When("คลิกปุ่ม Search ของหน้า Cus", { timeout: 300000 }, async () => {
     await page.getByRole('button', { name: 'search Search' }).click();
     await page.getByRole('button', { name: 'delete Clear' }).click();
 });
@@ -68,7 +68,7 @@ When("กรอกข้อมูลค้นหา Search2", { timeout: 300000 
     await page.locator('#input_text_search').fill('---');
 });
 
-When("คลิกปุ่ม Search2", { timeout: 300000 }, async () => {
+When("คลิกปุ่ม Search2 ของหน้า Cus", { timeout: 300000 }, async () => {
     await page.getByRole('button', { name: 'search Search' }).click();
     await page.waitForTimeout(1000);
     await page.getByRole('button', { name: 'delete Clear' }).click();
@@ -79,7 +79,7 @@ When("กรอกข้อมูลค้นหา Search3", { timeout: 300000 
     await page.locator('#input_text_search').fill('Hi');
 });
 
-When("คลิกปุ่ม Search3", { timeout: 300000 }, async () => {
+When("คลิกปุ่ม Search3 ของหน้า Cus", { timeout: 300000 }, async () => {
     await page.getByRole('button', { name: 'search Search' }).click();
     await page.getByRole('button', { name: 'delete Clear' }).click();
 });
@@ -91,7 +91,7 @@ When("เลือกข้อมูลช่วงวันที่ ใน Dat
   await page.getByText('31').nth(2).click();
 });
 
-When("คลิกปุ่ม Search4", { timeout: 300000 }, async () => {
+When("คลิกปุ่ม Search4 ของหน้า Cus", { timeout: 300000 }, async () => {
     await page.getByRole('button', { name: 'search Search' }).click();
     await page.getByRole('button', { name: 'delete Clear' }).click();
 });
@@ -104,7 +104,7 @@ When("เลือกข้อมูล Product2", { timeout: 300000 }, async ()
 });
 
 
-When("คลิกปุ่ม Search5", { timeout: 300000 }, async () => {
+When("คลิกปุ่ม Search5 ของหน้า Cus", { timeout: 300000 }, async () => {
     await page.getByRole('button', { name: 'search Search' }).click();
     await page.getByRole('button', { name: 'delete Clear' }).click();
 });
@@ -116,7 +116,7 @@ When("เลือกข้อมูล Type of Chat2", { timeout: 300000 }, asy
     await page.getByText('แจ้งปัญหาการใช้งาน+ 0').click();
 });
 
-When("คลิกปุ่ม Search6", { timeout: 300000 }, async () => {
+When("คลิกปุ่ม Search6 ของหน้า Cus", { timeout: 300000 }, async () => {
     await page.getByRole('button', { name: 'search Search' }).click();
     await page.getByRole('button', { name: 'delete Clear' }).click();
 });
@@ -128,7 +128,7 @@ When("เลือกข้อมูล Ticket Status2", { timeout: 300000 }, as
     await page.getByText('Processing+ 0').click();
 });
 
-When("คลิกปุ่ม Search7", { timeout: 300000 }, async () => {
+When("คลิกปุ่ม Search7 ของหน้า Cus", { timeout: 300000 }, async () => {
     await page.getByRole('button', { name: 'search Search' }).click();
     await page.getByRole('button', { name: 'delete Clear' }).click();
 });
@@ -138,7 +138,7 @@ When("กรอกข้อมูลค้นหา Search4", { timeout: 300000 
     await page.locator('#input_text_search').fill('ทด');
 });
 
-When("คลิกปุ่ม Search8", { timeout: 300000 }, async () => {
+When("คลิกปุ่ม Search8 ของหน้า Cus", { timeout: 300000 }, async () => {
     await page.getByRole('button', { name: 'search Search' }).click();
     await page.getByRole('button', { name: 'delete Clear' }).click();
 });
@@ -148,7 +148,7 @@ When("กรอกข้อมูลค้นหา Search5", { timeout: 300000 
     await page.locator('#input_text_search').fill('    ทดสอบ');
 });
 
-When("คลิกปุ่ม Search9", { timeout: 300000 }, async () => {
+When("คลิกปุ่ม Search9 ของหน้า Cus", { timeout: 300000 }, async () => {
     await page.getByRole('button', { name: 'search Search' }).click();
     await page.getByRole('button', { name: 'delete Clear' }).click();
 });
@@ -160,7 +160,7 @@ When("เลือกข้อมูล Product3", { timeout: 300000 }, async ()
     await page.getByTitle('Test By Boom 2').click();
 });
 
-When("คลิกปุ่ม Search10", { timeout: 300000 }, async () => {
+When("คลิกปุ่ม Search10 ของหน้า Cus", { timeout: 300000 }, async () => {
     await page.getByRole('button', { name: 'search Search' }).click();
     await page.getByRole('button', { name: 'delete Clear' }).click();
 });
@@ -172,7 +172,7 @@ When("เลือกรายการ Type Of Chat : แจ้งปัญห�
     await page.getByText('แจ้งปัญหาการใช้งาน+ 0').click();
 });
 
-When("คลิกปุ่ม Search11", { timeout: 300000 }, async () => {
+When("คลิกปุ่ม Search11 ของหน้า Cus", { timeout: 300000 }, async () => {
     await page.getByRole('button', { name: 'search Search' }).click();
 });
 
@@ -186,7 +186,7 @@ When("เลือกรายการ Type Of Chat : สอบถามกา�
     await page.getByText('สอบถามการใช้งาน+ 0').click();
 });
 
-When("คลิกปุ่ม Search12", { timeout: 300000 }, async () => {
+When("คลิกปุ่ม Search12 ของหน้า Cus", { timeout: 300000 }, async () => {
     await page.getByRole('button', { name: 'search Search' }).click();
 });
 
@@ -202,7 +202,7 @@ When("เลือกรายการ Type Of Chat", { timeout: 300000 }, asyn
     await page.getByText('แจ้งปัญหาการใช้งานสอบถามการใช้งาน+ 2').click();
 });
 
-When("คลิกปุ่ม Search13", { timeout: 300000 }, async () => {
+When("คลิกปุ่ม Search13 ของหน้า Cus", { timeout: 300000 }, async () => {
     await page.getByRole('button', { name: 'search Search' }).click();
     await page.getByRole('button', { name: 'delete Clear' }).click();
 });
@@ -214,7 +214,7 @@ When("เลือกรายการ Ticket Status : Processing", { timeout: 
     await page.getByText('Processing+ 0').click();
 });
 
-When("คลิกปุ่ม Search14", { timeout: 300000 }, async () => {
+When("คลิกปุ่ม Search14 ของหน้า Cus", { timeout: 300000 }, async () => {
     await page.getByRole('button', { name: 'search Search' }).click();
 });
 
@@ -228,7 +228,7 @@ When("เลือกรายการ Ticket Status : Reopen", { timeout: 3000
     await page.getByText('Reopen+ 0').click();
 });
 
-When("คลิกปุ่ม Search15", { timeout: 300000 }, async () => {
+When("คลิกปุ่ม Search15 ของหน้า Cus", { timeout: 300000 }, async () => {
     await page.getByRole('button', { name: 'search Search' }).click();
 });
 
@@ -242,7 +242,7 @@ When("เลือกรายการ Ticket Status : Success", { timeout: 300
     await page.getByText('Success+ 0').click();
 });
 
-When("คลิกปุ่ม Search16", { timeout: 300000 }, async () => {
+When("คลิกปุ่ม Search16 ของหน้า Cus", { timeout: 300000 }, async () => {
     await page.getByRole('button', { name: 'search Search' }).click();
 });
 
@@ -260,7 +260,7 @@ When("เลือกรายการ Ticket Status", { timeout: 300000 }, asy
     await page.getByText('ProcessingReopenSuccess+ 2').click();
 });
 
-When("คลิกปุ่ม Search17", { timeout: 300000 }, async () => {
+When("คลิกปุ่ม Search17 ของหน้า Cus", { timeout: 300000 }, async () => {
     await page.getByRole('button', { name: 'search Search' }).click();
     await page.getByRole('button', { name: 'delete Clear' }).click();
 });
@@ -292,7 +292,7 @@ When("เลือกข้อมูล Ticket Status3", { timeout: 300000 }, as
     await page.getByTitle('Processing').click();
 });
 
-When("คลิกปุ่ม Search18", { timeout: 300000 }, async () => {
+When("คลิกปุ่ม Search18 ของหน้า Cus", { timeout: 300000 }, async () => {
     await page.getByRole('button', { name: 'search Search' }).click();
 });
 
@@ -461,7 +461,7 @@ When("เลือกข้อมูล Product5", { timeout: 300000 }, async ()
     await page.getByText('Test by Boom+ 0').click();
 });
 
-When("คลิกปุ่ม Search19", { timeout: 300000 }, async () => {
+When("คลิกปุ่ม Search19 ของหน้า Cus", { timeout: 300000 }, async () => {
     await page.getByRole('button', { name: 'search Search' }).click();
     await page.waitForTimeout(1000);
 });
