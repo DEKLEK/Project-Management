@@ -28,7 +28,7 @@ When("เข้าสู่ระบบ Ticket Monitoring", { timeout: 300000 },
     await page.locator('div').filter({ hasText: /^Komatsuสำนักงานใหญ่$/ }).nth(1).click();
     await page.getByRole('menuitem', { name: 'Ticket Management Center' }).click();
     await page.getByRole('menuitem', { name: 'Ticket Monitoring' }).click();
-    await page.waitForTimeout(2000);
+    await page.waitForTimeout(1000);
 });
 
 When("เลือกข้อมูล Product Code", { timeout: 300000 },async () => {
@@ -36,7 +36,7 @@ When("เลือกข้อมูล Product Code", { timeout: 300000 },async
 //     if (await closeAlertButton.isVisible({ timeout: 0 })) {
 //         await closeAlertButton.click();
 //     }
-    await page.waitForTimeout(2000);
+    await page.waitForTimeout(1000);
     // await page.locator('#button_close_alert').click();
     await page.locator('.ant-select-selection-overflow').click();
     await page.locator('#select_select_product_list_ticket_monitoring').fill('B');
@@ -85,10 +85,12 @@ When("เข้าสู่ระบบ Ticket Monitoring3", { timeout: 300000 }
     await page.getByRole('button', { name: 'Sign in' }).click();
     await page.locator('div').filter({ hasText: /^Komatsuสำนักงานใหญ่$/ }).nth(1).click();
     await page.getByRole('button', { name: 'close' }).click();
+    await page.waitForTimeout(1000);
+    await page.getByRole('button', { name: 'close' }).click();
     await page.getByRole('button', { name: 'ปิด' }).click();
     await page.getByRole('menuitem', { name: 'Ticket Management Center' }).click();
     await page.getByRole('menuitem', { name: 'Ticket Monitoring' }).click();
-    await page.waitForTimeout(2000);
+    await page.waitForTimeout(1000);
     await page.locator('path').nth(5).click();
 });
 
@@ -102,11 +104,10 @@ When("เข้าสู่ระบบ Ticket Monitoring4", { timeout: 300000 }
     await page.getByRole('textbox', { name: 'Enter your password' }).fill('123456');
     await page.getByRole('button', { name: 'Sign in' }).click();
     await page.locator('div').filter({ hasText: /^Komatsuสำนักงานใหญ่$/ }).nth(1).click();
-    await page.getByRole('button', { name: 'close' }).click();
     await page.getByRole('button', { name: 'ปิด' }).click();
     await page.getByRole('menuitem', { name: 'Ticket Management Center' }).click();
     await page.getByRole('menuitem', { name: 'Ticket Monitoring' }).click();
-    await page.waitForTimeout(2000);
+    await page.waitForTimeout(1000);
     await page.locator('path').nth(5).click();
 });
 
@@ -122,9 +123,9 @@ When("กดเลือกวันที่ที่ต้องการ", { 
     await page.locator('div').filter({ hasText: /^Komatsuสำนักงานใหญ่$/ }).nth(1).click();
     await page.getByRole('menuitem', { name: 'Ticket Management Center' }).click();
     await page.getByRole('menuitem', { name: 'Ticket Monitoring' }).click();
-    await page.waitForTimeout(2000);
+    await page.waitForTimeout(1000);
     await page.getByRole('button', { name: 'delete Clear' }).click();
-    await page.waitForTimeout(2000);
+    await page.waitForTimeout(1000);
     await page.getByRole('textbox', { name: 'Start date' }).click();
     await page.getByRole('cell', { name: '1', exact: true }).nth(3).click();
     await page.getByText('31').nth(2).click();
@@ -143,7 +144,7 @@ When("เข้าสู่ระบบ Ticket Monitoring5", { timeout: 300000 }
     await page.locator('div').filter({ hasText: /^Komatsuสำนักงานใหญ่$/ }).nth(1).click();
     await page.getByRole('menuitem', { name: 'Ticket Management Center' }).click();
     await page.getByRole('menuitem', { name: 'Ticket Monitoring' }).click();
-    await page.waitForTimeout(2000);
+    await page.waitForTimeout(1000);
     await page.locator('path').nth(5).click();
 });
 
@@ -154,10 +155,12 @@ When("เข้าสู่ระบบ Ticket Monitoring6", { timeout: 300000 }
     await page.getByRole('button', { name: 'Sign in' }).click();
     await page.locator('div').filter({ hasText: /^Komatsuสำนักงานใหญ่$/ }).nth(1).click();
     await page.getByRole('button', { name: 'close' }).click();
+    await page.waitForTimeout(1000);
+    await page.getByRole('button', { name: 'close' }).click();
     await page.getByRole('button', { name: 'ปิด' }).click();
     await page.getByRole('menuitem', { name: 'Ticket Management Center' }).click();
     await page.getByRole('menuitem', { name: 'Ticket Monitoring' }).click();
-    await page.waitForTimeout(2000);
+    await page.waitForTimeout(1000);
     await page.locator('path').nth(5).click();
 });
 
@@ -167,11 +170,10 @@ When("เข้าสู่ระบบ Ticket Monitoring7", { timeout: 300000 }
     await page.getByRole('textbox', { name: 'Enter your password' }).fill('123456');
     await page.getByRole('button', { name: 'Sign in' }).click();
     await page.locator('div').filter({ hasText: /^Komatsuสำนักงานใหญ่$/ }).nth(1).click();
-    await page.getByRole('button', { name: 'close' }).click();
     await page.getByRole('button', { name: 'ปิด' }).click();
     await page.getByRole('menuitem', { name: 'Ticket Management Center' }).click();
     await page.getByRole('menuitem', { name: 'Ticket Monitoring' }).click();
-    await page.waitForTimeout(2000);
+    await page.waitForTimeout(1000);
     await page.locator('path').nth(5).click();
 });
 
@@ -183,7 +185,7 @@ When("เข้าสู่ระบบ Ticket Monitoring8", { timeout: 300000 }
     await page.locator('div').filter({ hasText: /^Komatsuสำนักงานใหญ่$/ }).nth(1).click();
     await page.getByRole('menuitem', { name: 'Ticket Management Center' }).click();
     await page.getByRole('menuitem', { name: 'Ticket Monitoring' }).click();
-    await page.waitForTimeout(2000);
+    await page.waitForTimeout(1000);
 });
 
 //TM_012 : ทดสอบการแสดงผล Severity กรณีมี Product เดี่ยว//
@@ -2814,224 +2816,235 @@ When("กดปุ่ม Search95 ของหน้า Ticket", { timeout: 3000
     await page.getByRole('button', { name: 'search Search' }).click();
 });
 
-// //TM_110 : ทดสอบการดูข้อมูลใน Latest Tickets Created//
-// When("กดปุ่ม Search96 ของหน้า Ticket", { timeout: 300000 },async () => {
-//     await page.getByRole('button', { name: 'delete Clear' }).click();
-//     await page.getByRole('button', { name: 'search Search' }).click();
-// });
+//TM_110 : ทดสอบการดูข้อมูลใน Latest Tickets Created//
+When("กดปุ่ม Search96 ของหน้า Ticket", { timeout: 300000 },async () => {
+    await page.getByRole('button', { name: 'delete Clear' }).click();
+    await page.getByRole('button', { name: 'search Search' }).click();
+});
 
-// When("เลือกดูข้อมูลใน Latest Tickets Created", { timeout: 300000 },async () => {
-//     await page.locator('#root').locator('text=/./').first().click();
-//     await page.waitForTimeout(2000);
-// });
+When("เลือกดูข้อมูลใน Latest Tickets Created", { timeout: 300000 },async () => {
+// แก้จาก getByText('test').nth(1) เป็น:
+  await page.getByText('test').nth(1).click();
+});
 
-// //TM_111 : ทดสอบแสดงผล Ticket Detail ใน Latest Tickets Created//
-// When("เข้าสู่ระบบ Ticket Monitoring9", { timeout: 300000 },async () => {
-//     await page.getByRole('menuitem', { name: 'Ticket Monitoring' }).click();
-//     // await page.locator('#button_close_alert').click();
-// });
+//TM_111 : ทดสอบแสดงผล Ticket Detail ใน Latest Tickets Created//
+When("เข้าสู่ระบบ Ticket Monitoring9", { timeout: 300000 },async () => {
+    await page.getByRole('menuitem', { name: 'Ticket Monitoring' }).click();
+    // await page.locator('#button_close_alert').click();
+});
 
-// When("กดปุ่ม Search97 ของหน้า Ticket", { timeout: 300000 },async () => {ๆ
-//     await page.getByRole('button', { name: 'delete Clear' }).click();
-//     await page.getByRole('button', { name: 'search Search' }).click();
-// });
+When("กดปุ่ม Search97 ของหน้า Ticket", { timeout: 300000 },async () => {
+    await page.getByRole('button', { name: 'delete Clear' }).click();
+    await page.getByRole('button', { name: 'search Search' }).click();
+});
 
-// When("เลือกดูข้อมูลใน Latest Tickets Created2", { timeout: 300000 },async () => {
-//     await page.locator('#root').locator('text=/./').first().click();
-//     await page.waitForTimeout(2000);
-// });
+When("เลือกดูข้อมูลใน Latest Tickets Created2", { timeout: 300000 },async () => {
+// แก้จาก getByText('test').nth(1) เป็น:
+  await page.getByText('test').nth(1).click();
+});
 
-// //TM_112 : ทดสอบแสดงผล Log Ticket Phase ใน Latest Tickets Created//
-// When("เข้าสู่ระบบ Ticket Monitoring10", { timeout: 300000 },async () => {
-//     await page.getByRole('menuitem', { name: 'Ticket Monitoring' }).click();
-//     // await page.locator('#button_close_alert').click();
-// });
+//TM_112 : ทดสอบแสดงผล Log Ticket Phase ใน Latest Tickets Created//
+When("เข้าสู่ระบบ Ticket Monitoring10", { timeout: 300000 },async () => {
+    await page.getByRole('menuitem', { name: 'Ticket Monitoring' }).click();
+    // await page.locator('#button_close_alert').click();
+});
 
-// When("กดปุ่ม Search98 ของหน้า Ticket", { timeout: 300000 },async () => {
-//     await page.getByRole('button', { name: 'delete Clear' }).click();
-//     await page.getByRole('button', { name: 'search Search' }).click();
-// });
+When("กดปุ่ม Search98 ของหน้า Ticket", { timeout: 300000 },async () => {
+    await page.getByRole('button', { name: 'delete Clear' }).click();
+    await page.getByRole('button', { name: 'search Search' }).click();
+});
 
-// When("เลือกดูข้อมูลใน Latest Tickets Created3", { timeout: 300000 },async () => {
-//     await page.locator('#root').locator('text=/./').first().click();
-//     await page.waitForTimeout(2000);
-// });
+When("เลือกดูข้อมูลใน Latest Tickets Created3", { timeout: 300000 },async () => {
+// แก้จาก getByText('test').nth(1) เป็น:
+  await page.getByText('test').nth(1).click();
+});
 
-// //TM_113 : ทดสอบแสดงผล Description ใน Latest Tickets Created//
-// When("เข้าสู่ระบบ Ticket Monitoring11", { timeout: 300000 },async () => {
-//     await page.getByRole('menuitem', { name: 'Ticket Monitoring' }).click();
-//     // await page.locator('#button_close_alert').click();
-// });
+//TM_113 : ทดสอบแสดงผล Description ใน Latest Tickets Created//
+When("เข้าสู่ระบบ Ticket Monitoring11", { timeout: 300000 },async () => {
+    await page.getByRole('menuitem', { name: 'Ticket Monitoring' }).click();
+    // await page.locator('#button_close_alert').click();
+});
 
-// When("กดปุ่ม Search99 ของหน้า Ticket", { timeout: 300000 },async () => {
-//     await page.getByRole('button', { name: 'delete Clear' }).click();
-//     await page.getByRole('button', { name: 'search Search' }).click();
-// });
+When("กดปุ่ม Search99 ของหน้า Ticket", { timeout: 300000 },async () => {
+    await page.getByRole('button', { name: 'delete Clear' }).click();
+    await page.getByRole('button', { name: 'search Search' }).click();
+});
 
-// When("เลือกดูข้อมูลใน Latest Tickets Created4", { timeout: 300000 },async () => {
-//     await page.locator('#root').locator('text=/./').first().click();
-//     await page.waitForTimeout(2000);
-// });
+When("เลือกดูข้อมูลใน Latest Tickets Created4", { timeout: 300000 },async () => {
+// แก้จาก getByText('test').nth(1) เป็น:
+  await page.getByText('test').nth(1).click();
+});
 
-// //TM_114 : ทดสอบแสดงผล Comment ใน Latest Tickets Created//
-// When("เข้าสู่ระบบ Ticket Monitoring12", { timeout: 300000 },async () => {
-//     await page.getByRole('menuitem', { name: 'Ticket Monitoring' }).click();
-//     // await page.locator('#button_close_alert').click();
-// });
+//TM_114 : ทดสอบแสดงผล Comment ใน Latest Tickets Created//
+When("เข้าสู่ระบบ Ticket Monitoring12", { timeout: 300000 },async () => {
+    await page.getByRole('menuitem', { name: 'Ticket Monitoring' }).click();
+    // await page.locator('#button_close_alert').click();
+});
 
-// When("กดปุ่ม Search100 ของหน้า Ticket", { timeout: 300000 },async () => {
-//     await page.getByRole('button', { name: 'delete Clear' }).click();
-//     await page.getByRole('button', { name: 'search Search' }).click();
-// });
+When("กดปุ่ม Search100 ของหน้า Ticket", { timeout: 300000 },async () => {
+    await page.getByRole('button', { name: 'delete Clear' }).click();
+    await page.getByRole('button', { name: 'search Search' }).click();
+});
 
-// When("เลือกดูข้อมูลใน Latest Tickets Created5", { timeout: 300000 },async () => {
-//     await page.locator('#root').locator('text=/./').first().click();
-//     await page.waitForTimeout(2000);
-// });
+When("เลือกดูข้อมูลใน Latest Tickets Created5", { timeout: 300000 },async () => {
+// แก้จาก getByText('test').nth(1) เป็น:
+  await page.getByText('test').nth(1).click();
+});
 
-// //TM_115 : ทดสอบการดู Create by ของ Ticket Detail ใน Latest Tickets Created//
-// When("เข้าสู่ระบบ Ticket Monitoring13", { timeout: 300000 },async () => {
-//     await page.getByRole('menuitem', { name: 'Ticket Monitoring' }).click();
-//     // await page.locator('#button_close_alert').click();
-// });
+//TM_115 : ทดสอบการดู Create by ของ Ticket Detail ใน Latest Tickets Created//
+When("เข้าสู่ระบบ Ticket Monitoring13", { timeout: 300000 },async () => {
+    await page.getByRole('menuitem', { name: 'Ticket Monitoring' }).click();
+    // await page.locator('#button_close_alert').click();
+});
 
-// When("กดปุ่ม Search101 ของหน้า Ticket", { timeout: 300000 },async () => {
-//     await page.getByRole('button', { name: 'delete Clear' }).click();
-//     await page.getByRole('button', { name: 'search Search' }).click();
-// });
+When("กดปุ่ม Search101 ของหน้า Ticket", { timeout: 300000 },async () => {
+    await page.getByRole('button', { name: 'delete Clear' }).click();
+    await page.getByRole('button', { name: 'search Search' }).click();
+});
 
-// When("เลือกดูข้อมูลใน Latest Tickets Created6", { timeout: 300000 },async () => {
-//     await page.locator('#root').locator('text=/./').first().click();
-//     await page.waitForTimeout(2000);
-// });
+When("เลือกดูข้อมูลใน Latest Tickets Created6", { timeout: 300000 },async () => {
+// แก้จาก getByText('test').nth(1) เป็น:
+  await page.getByText('test').nth(1).click();
+});
 
-// When("คลิก Create by", { timeout: 300000 },async () => {
-//     await page.getByText('Create by').click();
-//     await page.getByRole('button', { name: 'close' }).click();
-// });
+When("คลิก Create by", { timeout: 300000 },async () => {
+    await page.getByText('Create By').first().click();
+    await page.waitForTimeout(1000);
+    await page.getByRole('button', { name: 'close' }).click();
+});
 
-// //TM_116 : ทดสอบการดู Manage by ของ Ticket Detail ใน Latest Tickets Created//
-// When("เข้าสู่ระบบ Ticket Monitoring14", { timeout: 300000 },async () => {
-//     await page.getByRole('menuitem', { name: 'Ticket Monitoring' }).click();
-//     // await page.locator('#button_close_alert').click();
-// });
+//TM_116 : ทดสอบการดู Manage by ของ Ticket Detail ใน Latest Tickets Created//
+When("เข้าสู่ระบบ Ticket Monitoring14", { timeout: 300000 },async () => {
+    await page.getByRole('menuitem', { name: 'Ticket Monitoring' }).click();
+    // await page.locator('#button_close_alert').click();
+});
 
-// When("กดปุ่ม Search102 ของหน้า Ticket", { timeout: 300000 },async () => {
-//     await page.getByRole('button', { name: 'delete Clear' }).click();
-//     await page.getByRole('button', { name: 'search Search' }).click();
-// });
+When("กดปุ่ม Search102 ของหน้า Ticket", { timeout: 300000 },async () => {
+    await page.getByRole('button', { name: 'delete Clear' }).click();
+    await page.getByRole('button', { name: 'search Search' }).click();
+});
 
-// When("เลือกดูข้อมูลใน Latest Tickets Created7", { timeout: 300000 },async () => {
-//     await page.locator('#root').locator('text=/./').first().click();
-//     await page.waitForTimeout(2000);
-// });
+When("เลือกดูข้อมูลใน Latest Tickets Created7", { timeout: 300000 },async () => {
+// แก้จาก getByText('test').nth(1) เป็น:
+  await page.getByText('test').nth(1).click();
+});
 
-// When("คลิก Manage by", { timeout: 300000 },async () => {
-//     await page.getByText('Manage by').click();
-//     await page.getByRole('button', { name: 'close' }).click();
-// });
+When("คลิก Manage by", { timeout: 300000 },async () => {
+    await page.getByText('Manage by').click();
+    await page.waitForTimeout(1000);
+    await page.getByRole('button', { name: 'close' }).click();
+});
 
-// //TM_117 : ทดสอบการเปิดปิดหน้าต่างของ Ticket Detail//
-// When("เข้าสู่ระบบ Ticket Monitoring15", { timeout: 300000 },async () => {
-//     await page.getByRole('menuitem', { name: 'Ticket Monitoring' }).click();
-//     // await page.locator('#button_close_alert').click();
-// });
+//TM_117 : ทดสอบการเปิดปิดหน้าต่างของ Ticket Detail//
+When("เข้าสู่ระบบ Ticket Monitoring15", { timeout: 300000 },async () => {
+    await page.getByRole('menuitem', { name: 'Ticket Monitoring' }).click();
+    // await page.locator('#button_close_alert').click();
+});
 
-// When("กดปุ่ม Search103 ของหน้า Ticket", { timeout: 300000 },async () => {
-//     await page.getByRole('button', { name: 'delete Clear' }).click();
-//     await page.getByRole('button', { name: 'search Search' }).click();
-// });
+When("กดปุ่ม Search103 ของหน้า Ticket", { timeout: 300000 },async () => {
+    await page.getByRole('button', { name: 'delete Clear' }).click();
+    await page.getByRole('button', { name: 'search Search' }).click();
+});
 
-// When("เลือกดูข้อมูลใน Latest Tickets Created8", { timeout: 300000 },async () => {
-//     await page.locator('#root').locator('text=/./').first().click();
-//     await page.waitForTimeout(2000);
-// });
+When("เลือกดูข้อมูลใน Latest Tickets Created8", { timeout: 300000 },async () => {
+// แก้จาก getByText('test').nth(1) เป็น:
+  await page.getByText('test').nth(1).click();
+});
 
-// When("กดปุ่มลบของ Ticket Detail", { timeout: 300000 },async () => {
-//     await page.locator('.ant-col.ant-col-xs-4 > div').first().click();
-// });
+When("กดปุ่มลบของ Ticket Detail", { timeout: 300000 },async () => {
+    await page.locator('.ant-col.ant-col-xs-4 > div').first().click();
+});
 
-// When("กดปุ่มบวกของ Ticket Detail", { timeout: 300000 },async () => {
-//     await page.locator('.ant-col.ant-col-xs-4 > div').first().click();
-// });
+When("กดปุ่มบวกของ Ticket Detail", { timeout: 300000 },async () => {
+    await page.locator('.ant-col.ant-col-xs-4 > div').first().click();
+});
 
-// //TM_118 : ทดสอบการเปิดปิดหน้าต่างของ Log Ticket Phase//
-// When("เข้าสู่ระบบ Ticket Monitoring16", { timeout: 300000 },async () => {
-//     await page.getByRole('menuitem', { name: 'Ticket Monitoring' }).click();
-//     // await page.locator('#button_close_alert').click();
-// });
+//TM_118 : ทดสอบการเปิดปิดหน้าต่างของ Log Ticket Phase//
+When("เข้าสู่ระบบ Ticket Monitoring16", { timeout: 300000 },async () => {
+    await page.getByRole('menuitem', { name: 'Ticket Monitoring' }).click();
+    // await page.locator('#button_close_alert').click();
+});
 
-// When("กดปุ่ม Search104 ของหน้า Ticket", { timeout: 300000 },async () => {
-//     await page.getByRole('button', { name: 'delete Clear' }).click();
-//     await page.getByRole('button', { name: 'search Search' }).click();
-// });
+When("กดปุ่ม Search104 ของหน้า Ticket", { timeout: 300000 },async () => {
+    await page.getByRole('button', { name: 'delete Clear' }).click();
+    await page.getByRole('button', { name: 'search Search' }).click();
+});
 
-// When("เลือกดูข้อมูลใน Latest Tickets Created9", { timeout: 300000 },async () => {
-//     await page.locator('#root').locator('text=/./').first().click();
-//     await page.waitForTimeout(2000);
-// });
+When("เลือกดูข้อมูลใน Latest Tickets Created9", { timeout: 300000 },async () => {
+// แก้จาก getByText('test').nth(1) เป็น:
+  await page.getByText('test').nth(1).click();
+});
 
-// When("กดปุ่มลบของ Log Ticket Phase", { timeout: 300000 },async () => {
-//     await page.locator('.card-element-header.header-toggle > .ant-row > .ant-col.ant-col-xs-4 > div').first().click();
-// });
+When("กดปุ่มลบของ Log Ticket Phase", { timeout: 300000 },async () => {
+    await page.locator('.card-element-header.header-toggle > .ant-row > .ant-col.ant-col-xs-4 > div').first().click();
+});
 
-// When("กดปุ่มบวกของ Log Ticket Phase", { timeout: 300000 },async () => {
-//     await page.locator('.card-element-header.header-toggle > .ant-row > .ant-col.ant-col-xs-4 > div').first().click();
-// });
+When("กดปุ่มบวกของ Log Ticket Phase", { timeout: 300000 },async () => {
+    await page.locator('.card-element-header.header-toggle > .ant-row > .ant-col.ant-col-xs-4 > div').first().click();
+});
 
-// //TM_119 : ทดสอบการเปิดปิดหน้าต่างของ Description//
-// When("เข้าสู่ระบบ Ticket Monitoring17", { timeout: 300000 },async () => {
-//     await page.getByRole('menuitem', { name: 'Ticket Monitoring' }).click();
-//     // await page.locator('#button_close_alert').click();
-// });
+//TM_119 : ทดสอบการเปิดปิดหน้าต่างของ Description//
+When("เข้าสู่ระบบ Ticket Monitoring17", { timeout: 300000 },async () => {
+    await page.getByRole('menuitem', { name: 'Ticket Monitoring' }).click();
+    // await page.locator('#button_close_alert').click();
+});
 
-// When("กดปุ่ม Search105 ของหน้า Ticket", { timeout: 300000 },async () => {
-//     await page.getByRole('button', { name: 'delete Clear' }).click();
-//     await page.getByRole('button', { name: 'search Search' }).click();
-// });
+When("กดปุ่ม Search105 ของหน้า Ticket", { timeout: 300000 },async () => {
+    await page.getByRole('button', { name: 'delete Clear' }).click();
+    await page.getByRole('button', { name: 'search Search' }).click();
+});
 
-// When("เลือกดูข้อมูลใน Latest Tickets Created10", { timeout: 300000 },async () => {
-//     await page.locator('#root').locator('text=/./').first().click();
-//     await page.waitForTimeout(2000);
-// });
+When("เลือกดูข้อมูลใน Latest Tickets Created10", { timeout: 300000 },async () => {
+// แก้จาก getByText('test').nth(1) เป็น:
+  await page.getByText('test').nth(1).click();
+});
 
-// When("กดปุ่มลบของ Description", { timeout: 300000 },async () => {
-//     await page.locator('.ant-col.ant-col-xs-24.ant-col-sm-24.ant-col-md-24.ant-col-lg-24 > div > div > div > .ant-row > .ant-col.ant-col-xs-4 > div').click();
-// });
+When("กดปุ่มลบของ Description", { timeout: 300000 },async () => {
+    await page.locator('.ant-col.ant-col-xs-24.ant-col-sm-24.ant-col-md-24.ant-col-lg-24 > div > div > div > .ant-row > .ant-col.ant-col-xs-4 > div').click();
+});
 
-// When("กดปุ่มบวกของ Description", { timeout: 300000 },async () => {
-//     await page.locator('.ant-col.ant-col-xs-24.ant-col-sm-24.ant-col-md-24.ant-col-lg-24 > div > div > div > .ant-row > .ant-col.ant-col-xs-4 > div').click();
-// });
+When("กดปุ่มบวกของ Description", { timeout: 300000 },async () => {
+    await page.locator('.ant-col.ant-col-xs-24.ant-col-sm-24.ant-col-md-24.ant-col-lg-24 > div > div > div > .ant-row > .ant-col.ant-col-xs-4 > div').click();
+});
 
-// //TM_120 : ทดสอบการส่งข้อความและหลายไฟล์ ในช่อง comment//
-// When("เข้าสู่ระบบ Ticket Monitoring18", { timeout: 300000 },async () => {
-//     await page.getByRole('menuitem', { name: 'Ticket Monitoring' }).click();
-//     // await page.locator('#button_close_alert').click();
-// });
+//TM_120 : ทดสอบการส่งข้อความและหลายไฟล์ ในช่อง comment//
+When("เข้าสู่ระบบ Ticket Monitoring18", { timeout: 300000 },async () => {
+    await page.getByRole('menuitem', { name: 'Ticket Monitoring' }).click();
+    // await page.locator('#button_close_alert').click();
+});
 
-// When("กดปุ่ม Search106 ของหน้า Ticket", { timeout: 300000 },async () => {
-//     await page.getByRole('button', { name: 'delete Clear' }).click();
-//     await page.getByRole('button', { name: 'search Search' }).click();
-// });
+When("กดปุ่ม Search106 ของหน้า Ticket", { timeout: 300000 },async () => {
+    await page.getByRole('button', { name: 'delete Clear' }).click();
+    await page.getByRole('button', { name: 'search Search' }).click();
+});
 
-// When("เลือกดูข้อมูลใน Latest Tickets Created11", { timeout: 300000 },async () => {
-//     await page.locator('#root').locator('text=/./').first().click();
-//     await page.waitForTimeout(2000);
-// });
+When("เลือกดูข้อมูลใน Latest Tickets Created11", { timeout: 300000 },async () => {
+// แก้จาก getByText('test').nth(1) เป็น:
+  await page.getByText('test').nth(1).click();
+});
 
-// When("กรอกข้อความ Type your message...", { timeout: 300000 },async () => {
-//     await page.getByRole('textbox', { name: 'Type your message...' }).fill('ทดสอบระบบ');
-//     await page.waitForTimeout(1000);
-// });
+When("กรอกข้อความ Type your message...", { timeout: 300000 },async () => {
+    await page.getByRole('textbox', { name: 'Type your message...' }).fill('ทดสอบระบบ');
+    await page.waitForTimeout(1000);
+});
 
-// When("เลือกไฟล์ส่งมา 3 ไฟล์", { timeout: 300000 },async () => {
-//     await page.getByRole('button', { name: 'paper-clip' }).click();
-//     await page.waitForTimeout(30000);
-// });
+When("เลือกไฟล์ส่งมา 3 ไฟล์", { timeout: 300000 },async () => {
+  const fileUploaderSelector = 'input[type="file"]'; 
+  await page.waitForTimeout(1000);
+  const filePath = 'img/test01.png'; 
+  await page.waitForTimeout(1000);
+  await page.setInputFiles(fileUploaderSelector, filePath);
+  const filePath2 = 'img/test.pptx';
+  const fileUploader2 = page.locator('input[type="file"]').first();
+  await fileUploader2.setInputFiles(filePath2);
+  const filePath3 = 'img/test02.png'; 
+  await page.waitForTimeout(1000);
+  await page.setInputFiles(fileUploaderSelector, filePath3);
+});
 
-// When("กดส่งข้อความ", { timeout: 300000 },async () => {
-//     await page.getByRole('button', { name: 'send' }).click();
-// });
+When("กดส่งข้อความ", { timeout: 300000 },async () => {
+    await page.getByRole('button', { name: 'send' }).click();
+});
 
 // //TM_121 : ทดสอบการแก้ไขข้อความและหลายไฟล์ ในช่อง comment//
 // When("เข้าสู่ระบบ Ticket Monitoring19", { timeout: 300000 },async () => {
@@ -3045,8 +3058,8 @@ When("กดปุ่ม Search95 ของหน้า Ticket", { timeout: 3000
 // });
 
 // When("เลือกดูข้อมูลใน Latest Tickets Created12", { timeout: 300000 },async () => {
-//     await page.locator('#root').locator('text=/./').first().click();
-//     await page.waitForTimeout(2000);
+// // แก้จาก getByText('test').nth(1) เป็น:
+//   await page.getByText('test').nth(1).click();
 // });
 
 // When("แก้ไขข้อความ Type your message...", { timeout: 300000 },async () => {
@@ -3056,8 +3069,17 @@ When("กดปุ่ม Search95 ของหน้า Ticket", { timeout: 3000
 // });
 
 // When("เลือกไฟล์ใหม่ส่งมา 3 ไฟล์", { timeout: 300000 },async () => {
-//     await page.getByRole('button', { name: 'paper-clip Upload' }).click();
-//     await page.waitForTimeout(30000);
+//   const fileUploaderSelector = 'input[type="file"]'; 
+//   await page.waitForTimeout(1000);
+//   const filePath4 = 'img/test01.png'; 
+//   await page.waitForTimeout(1000);
+//   await page.setInputFiles(fileUploaderSelector, filePath4);
+//   const filePath5 = 'img/test.pptx';
+//   const fileUploader4 = page.locator('input[type="file"]').first();
+//   await fileUploader4.setInputFiles(filePath5);
+//   const filePath6 = 'img/test02.jpg';
+//   const fileUploader5 = page.locator('input[type="file"]').nth(1);
+//   await fileUploader5.setInputFiles(filePath6);
 // });
 
 // When("กด Save", { timeout: 300000 },async () => {
@@ -3076,13 +3098,13 @@ When("กดปุ่ม Search95 ของหน้า Ticket", { timeout: 3000
 // });
 
 // When("เลือกดูข้อมูลใน Latest Tickets Created13", { timeout: 300000 },async () => {
-//     await page.locator('#root').locator('text=/./').first().click();
-//     await page.waitForTimeout(2000);
+// // แก้จาก getByText('test').nth(1) เป็น:
+//   await page.getByText('test').nth(1).click();
 // });
 
 // When("กดปุ่มถังขยะ", { timeout: 300000 },async () => {
 //     await page.getByRole('button', { name: 'delete' }).last().click();
-//     await page.waitForTimeout(2000);
+//     await page.waitForTimeout(1000);
 // });
 
 // //TM_123 : ทดสอบการกดปุ่ม Cancel หน้าการแจ้งเตือน//
@@ -3096,13 +3118,13 @@ When("กดปุ่ม Search95 ของหน้า Ticket", { timeout: 3000
 //     await page.getByRole('button', { name: 'Confirm' }).click();
 // });
 
-// //TM_125 : ทดสอบการแสดงผล Last 10 User Chats//
-// When("เข้าสู่ระบบ Ticket Monitoring21", { timeout: 300000 },async () => {
-//     await page.getByRole('menuitem', { name: 'Ticket Monitoring' }).click();
-//     // await page.locator('#button_close_alert').click();
-// });
+//TM_125 : ทดสอบการแสดงผล Last 10 User Chats//
+When("เข้าสู่ระบบ Ticket Monitoring21", { timeout: 300000 },async () => {
+    await page.getByRole('menuitem', { name: 'Ticket Monitoring' }).click();
+    // await page.locator('#button_close_alert').click();
+});
 
-// When("กดปุ่ม Search109 ของหน้า Ticket", { timeout: 300000 },async () => {
-//     await page.getByRole('button', { name: 'delete Clear' }).click();
-//     await page.getByRole('button', { name: 'search Search' }).click();
-// });
+When("กดปุ่ม Search109 ของหน้า Ticket", { timeout: 300000 },async () => {
+    await page.getByRole('button', { name: 'delete Clear' }).click();
+    await page.getByRole('button', { name: 'search Search' }).click();
+});

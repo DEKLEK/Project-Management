@@ -590,7 +590,7 @@ Feature: Ticket_Monitoring
     When กด icon แว่นขยาย51
     When กรอกข้อมูลในช่อง Search ของ Fail (ดำเนินการเรียบร้อย ไม่ผ่าน SLA)5
     When กดปุ่ม search42 ของหน้า Ticket
- 
+
   Scenario: TM_093 : ทดสอบการเลือกหน้า ใน Complete All Ticket
     When กดเลือกวันที่ที่ต้องการ8
     When กดปุ่ม Search85 ของหน้า Ticket
@@ -689,71 +689,70 @@ Feature: Ticket_Monitoring
   Scenario: TM_109 : ทดสอบการแสดงผล  Latest Tickets Created
     When กดปุ่ม Search95 ของหน้า Ticket
 
-  # Scenario: TM_110 : ทดสอบการดูข้อมูลใน Latest Tickets Created
-  #   When กดปุ่ม Search96 ของหน้า Ticket
-  #   When เลือกดูข้อมูลใน Latest Tickets Created
+  Scenario: TM_110 : ทดสอบการดูข้อมูลใน Latest Tickets Created
+    When กดปุ่ม Search96 ของหน้า Ticket
+    When เลือกดูข้อมูลใน Latest Tickets Created
 
-  # Scenario: TM_111 : ทดสอบแสดงผล Ticket Detail ใน Latest Tickets Created
-  #   When เข้าสู่ระบบ Ticket Monitoring9
-  #   When กดปุ่ม Search97 ของหน้า Ticket
-  #   When เลือกดูข้อมูลใน Latest Tickets Created2
+  Scenario: TM_111 : ทดสอบแสดงผล Ticket Detail ใน Latest Tickets Created
+    When เข้าสู่ระบบ Ticket Monitoring9
+    When กดปุ่ม Search97 ของหน้า Ticket
+    When เลือกดูข้อมูลใน Latest Tickets Created2
 
-  # Scenario: TM_112 : ทดสอบแสดงผล Log Ticket Phase ใน Latest Tickets Created
-  #   When เข้าสู่ระบบ Ticket Monitoring10
-  #   When กดปุ่ม Search98 ของหน้า Ticket
-  #   When เลือกดูข้อมูลใน Latest Tickets Created3
+  Scenario: TM_112 : ทดสอบแสดงผล Log Ticket Phase ใน Latest Tickets Created
+    When เข้าสู่ระบบ Ticket Monitoring10
+    When กดปุ่ม Search98 ของหน้า Ticket
+    When เลือกดูข้อมูลใน Latest Tickets Created3
 
-  # Scenario: TM_113 : ทดสอบแสดงผล Description ใน Latest Tickets Created
-  #   When เข้าสู่ระบบ Ticket Monitoring11
-  #   When กดปุ่ม Search99 ของหน้า Ticket
-  #   When เลือกดูข้อมูลใน Latest Tickets Created4
+  Scenario: TM_113 : ทดสอบแสดงผล Description ใน Latest Tickets Created
+    When เข้าสู่ระบบ Ticket Monitoring11
+    When กดปุ่ม Search99 ของหน้า Ticket
+    When เลือกดูข้อมูลใน Latest Tickets Created4
 
-  # Scenario: TM_114 : ทดสอบแสดงผล Comment ใน Latest Tickets Created
-  #   When เข้าสู่ระบบ Ticket Monitoring12
-  #   When กดปุ่ม Search100 ของหน้า Ticket
-  #   When เลือกดูข้อมูลใน Latest Tickets Created5
+  Scenario: TM_114 : ทดสอบแสดงผล Comment ใน Latest Tickets Created
+    When เข้าสู่ระบบ Ticket Monitoring12
+    When กดปุ่ม Search100 ของหน้า Ticket
+    When เลือกดูข้อมูลใน Latest Tickets Created5
 
-  # Scenario: TM_115 : ทดสอบการดู Create by ของ Ticket Detail ใน Latest Tickets Created
-  #   When เข้าสู่ระบบ Ticket Monitoring13
-  #   When กดปุ่ม Search101 ของหน้า Ticket
-  #   When เลือกดูข้อมูลใน Latest Tickets Created6
-  #   When คลิก Create by
+  Scenario: TM_115 : ทดสอบการดู Create by ของ Ticket Detail ใน Latest Tickets Created
+    When เข้าสู่ระบบ Ticket Monitoring13
+    When กดปุ่ม Search101 ของหน้า Ticket
+    When เลือกดูข้อมูลใน Latest Tickets Created6
+    When คลิก Create by
 
-  # Scenario: TM_116 : ทดสอบการดู Manage by ของ Ticket Detail ใน Latest Tickets Created
-  #   When เข้าสู่ระบบ Ticket Monitoring14
-  #   When กดปุ่ม Search102 ของหน้า Ticket
-  #   When เลือกดูข้อมูลใน Latest Tickets Created7
-  #   When คลิก Manage by
+  Scenario: TM_116 : ทดสอบการดู Manage by ของ Ticket Detail ใน Latest Tickets Created
+    When เข้าสู่ระบบ Ticket Monitoring14
+    When กดปุ่ม Search102 ของหน้า Ticket
+    When เลือกดูข้อมูลใน Latest Tickets Created7
+    When คลิก Manage by
 
-  # Scenario: TM_117 : ทดสอบการเปิดปิดหน้าต่างของ Ticket Detail
-  #   When เข้าสู่ระบบ Ticket Monitoring15
-  #   When กดปุ่ม Search103 ของหน้า Ticket
-  #   When เลือกดูข้อมูลใน Latest Tickets Created8
-  #   When กดปุ่มลบของ Ticket Detail
-  #   When กดปุ่มบวกของ Ticket Detail
+  Scenario: TM_117 : ทดสอบการเปิดปิดหน้าต่างของ Ticket Detail
+    When เข้าสู่ระบบ Ticket Monitoring15
+    When กดปุ่ม Search103 ของหน้า Ticket
+    When เลือกดูข้อมูลใน Latest Tickets Created8
+    When กดปุ่มลบของ Ticket Detail
+    When กดปุ่มบวกของ Ticket Detail
 
-  # Scenario: TM_118 : ทดสอบการเปิดปิดหน้าต่างของ Log Ticket Phase
-  #   When เข้าสู่ระบบ Ticket Monitoring16
-  #   When กดปุ่ม Search104 ของหน้า Ticket
-  #   When เลือกดูข้อมูลใน Latest Tickets Created9
-  #   When กดปุ่มลบของ Log Ticket Phase
-  #   When กดปุ่มบวกของ Log Ticket Phase
+  Scenario: TM_118 : ทดสอบการเปิดปิดหน้าต่างของ Log Ticket Phase
+    When เข้าสู่ระบบ Ticket Monitoring16
+    When กดปุ่ม Search104 ของหน้า Ticket
+    When เลือกดูข้อมูลใน Latest Tickets Created9
+    When กดปุ่มลบของ Log Ticket Phase
+    When กดปุ่มบวกของ Log Ticket Phase
 
-  # Scenario: TM_119 : ทดสอบการเปิดปิดหน้าต่างของ Description
-  #   When เข้าสู่ระบบ Ticket Monitoring17
-  #   When กดปุ่ม Search105 ของหน้า Ticket
-  #   When เลือกดูข้อมูลใน Latest Tickets Created10
-  #   When กดปุ่มลบของ Description
-  #   When กดปุ่มบวกของ Description
+  Scenario: TM_119 : ทดสอบการเปิดปิดหน้าต่างของ Description
+    When เข้าสู่ระบบ Ticket Monitoring17
+    When กดปุ่ม Search105 ของหน้า Ticket
+    When เลือกดูข้อมูลใน Latest Tickets Created10
+    When กดปุ่มลบของ Description
+    When กดปุ่มบวกของ Description
 
-  # Scenario: TM_120 : ทดสอบการส่งข้อความและหลายไฟล์ ในช่อง comment
-  #   When เข้าสู่ระบบ Ticket Monitoring18
-  #   When กดปุ่ม Search106 ของหน้า Ticket
-  #   When เลือกดูข้อมูลใน Latest Tickets Created11
-  #   When กรอกข้อความ Type your message...
-  #   When เลือกไฟล์ส่งมา 3 ไฟล์
-  #   When กดส่งข้อความ
-
+  Scenario: TM_120 : ทดสอบการส่งข้อความและหลายไฟล์ ในช่อง comment
+    When เข้าสู่ระบบ Ticket Monitoring18
+    When กดปุ่ม Search106 ของหน้า Ticket
+    When เลือกดูข้อมูลใน Latest Tickets Created11
+    When กรอกข้อความ Type your message...
+    When เลือกไฟล์ส่งมา 3 ไฟล์
+    When กดส่งข้อความ
   # Scenario: TM_121 : ทดสอบการแก้ไขข้อความและหลายไฟล์ ในช่อง comment
   #   When เข้าสู่ระบบ Ticket Monitoring19
   #   When กดปุ่ม Search107 ของหน้า Ticket
@@ -761,19 +760,16 @@ Feature: Ticket_Monitoring
   #   When แก้ไขข้อความ Type your message...
   #   When เลือกไฟล์ใหม่ส่งมา 3 ไฟล์
   #   When กด Save
-
   # Scenario: TM_122 : ทดสอบลบ comment
   #   When เข้าสู่ระบบ Ticket Monitoring20
   #   When กดปุ่ม Search108 ของหน้า Ticket
   #   When เลือกดูข้อมูลใน Latest Tickets Created13
   #   When กดปุ่มถังขยะ
-
   # Scenario: TM_123 : ทดสอบการกดปุ่ม Cancel หน้าการแจ้งเตือน
   #   When กดปุ่ม Cancel
-
   # Scenario: TM_124 : ทดสอบการกดปุ่ม Confirm หน้าการแจ้งเตือน
-  #   When กดปุ่ม Confirm
+  #   When กดปุ่ม Confirm 
 
-  # Scenario: TM_125 : ทดสอบการแสดงผล Last 10 User Chats
-  #   When เข้าสู่ระบบ Ticket Monitoring21
-  #   When กดปุ่ม Search109 ของหน้า Ticket
+  Scenario: TM_125 : ทดสอบการแสดงผล Last 10 User Chats
+    When เข้าสู่ระบบ Ticket Monitoring21
+    When กดปุ่ม Search109 ของหน้า Ticket

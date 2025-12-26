@@ -1615,9 +1615,9 @@ When("คลิกปุ่ม Confirm3", { timeout: 300000 }, async () => {
 //TC-SME-153 : ทดสอบปุ่ม Save ในหน้า New Company Edit - User - User Add//
 When("คลิกปุ่ม Save8", { timeout: 300000 }, async () => {
   await page.getByRole('button', { name: 'plus Add' }).click();
-  await page.locator('#input_text_').fill('35');
-  await page.locator('#input_text_iu-name-input').first().fill('35');
-  await page.locator('#input_text_iu-last-name-input').fill('35');
+  await page.locator('#input_text_').fill('43');
+  await page.locator('#input_text_iu-name-input').first().fill('43');
+  await page.locator('#input_text_iu-last-name-input').fill('43');
   await page.locator('.ant-select-selector').first().click();
   await page.getByText('หญิง').click();
   await page.getByRole('textbox', { name: 'Select date' }).click();
@@ -2367,7 +2367,7 @@ const prevButton = page.getByRole('button', { name: 'left', exact: true });
 When("กดจุด 3 จุด", { timeout: 300000 }, async () => {
   await page.locator('#input_text_sme_oem_table_search_input').fill('t1');
   await page.getByRole('button', { name: 'search Search' }).click();
-  const moreIcon = page.getByRole('row', { name: '2 t1 t1 On Premise 24/12/2025' }).locator('a')
+  const moreIcon = page.getByRole('row', { name: /2 t1 t1 On Premise/ }).locator('a');
   await moreIcon.hover();
   await page.getByRole('menu').waitFor({ state: 'visible' });
 });
@@ -2380,12 +2380,16 @@ When("คลิกปุ่มEdit", { timeout: 300000 }, async () => {
 //TC-SME-253 : ทดสอบการแก้ไขข้้อมูล Companyในหน้า New Company Add - Company (Edit)//
 When("แก้ไขข้อมูล Fill : Company Name", { timeout: 300000 }, async () => {
   await page.waitForTimeout(1000);
+  await page.locator('#input_text_input_product_system_brand').first().fill('');
+  await page.waitForTimeout(1000);
   await page.locator('#input_text_input_product_system_brand').first().fill('t11');
 });
 
 When("แก้ไขข้อมูล Fill : Company Abbreviation", { timeout: 300000 }, async () => {
   await page.waitForTimeout(1000);
-  await page.locator('#input_text_input_product_system_brand').nth(1).fill('t11');
+  await page.locator('#input_text_input_product_system_brand').nth(1).fill('');
+  await page.waitForTimeout(1000);
+  await page.locator('#input_text_input_product_system_brand').nth(1).fill('tt');
 });
 
 When("แก้ไขข้อมูล Fill : Email", { timeout: 300000 }, async () => {
@@ -2907,7 +2911,7 @@ When("คลิกปุ่ม Save15", { timeout: 300000 }, async () => {
   await page.waitForTimeout(1000);
   await page.locator('#input_text_sme_oem_table_search_input').fill('t1');
   await page.getByRole('button', { name: 'search Search' }).click();
-  const moreIcon = page.getByRole('row', { name: '2 t1 t1 On Premise 24/12/2025' }).locator('a')
+  const moreIcon = page.getByRole('row', { name: /2 t1 t1 On Premise/ }).locator('a');
   await moreIcon.hover();
   await page.getByRole('menu').waitFor({ state: 'visible' });
   await page.getByText('Edit').click();
@@ -4252,7 +4256,7 @@ When("คลิกปุ่ม Confirm17", { timeout: 300000 }, async () => {
 
 //TC-SME-466 : ทดสอบการปุ่ม View ในหน้า SME Factory - OEM Management//
 When("คลิกจุด 3 จุด9", { timeout: 300000 }, async () => {
-  const moreIcon = page.getByRole('row', { name: '2 t11 t1 , a On Premise 24/12' }).locator('a')
+  const moreIcon = page.getByRole('row', { name: /^2 t11/ }).locator('a');
   await moreIcon.hover();
   await page.getByRole('menu').waitFor({ state: 'visible' });
 });
@@ -4280,7 +4284,7 @@ When("คลิก Company", { timeout: 300000 }, async () => {
 
 //TC-SME-470 : ทดสอบการปุ่ม Sort Menu ในหน้า SME Factory - OEM Management//
 When("คลิกจุด 3 จุด10", { timeout: 300000 }, async () => {
-  const moreIcon = page.getByRole('row', { name: '2 t11 t1 , a On Premise 24/12' }).locator('a')
+  const moreIcon = page.getByRole('row', { name: /^2 t11/ }).locator('a');
   await moreIcon.hover();
   await page.getByRole('menu').waitFor({ state: 'visible' });
 });
@@ -4298,7 +4302,7 @@ When("กรอกข้อมูล ในช่องกรอก21", { timeou
 
 //TC-SME-472 : ทดสอบปุ่มไอคอน ปากกา ใน Sort Menu//
 When("คลิกปุ่ม Sort Menu2", { timeout: 300000 }, async () => {
-  const moreIcon = page.getByRole('row', { name: '2 t11 t1 , a On Premise 24/12' }).locator('a')
+  const moreIcon = page.getByRole('row', { name: /^2 t11/ }).locator('a');
   await moreIcon.hover();
   await page.getByRole('menu').waitFor({ state: 'visible' });
   await page.waitForTimeout(1000);
@@ -4316,7 +4320,7 @@ When("คลิกปุ่ม Cancel40", { timeout: 300000 }, async () => {
 
 //TC-SME-474 : ทดสอบปุ่ม Save ใน Sort Menu//
 When("คลิกปุ่ม Sort Menu3", { timeout: 300000 }, async () => {
-  const moreIcon = page.getByRole('row', { name: '2 t11 t1 , a On Premise 24/12' }).locator('a')
+  const moreIcon = page.getByRole('row', { name: /^2 t11/ }).locator('a');
   await moreIcon.hover();
   await page.getByRole('menu').waitFor({ state: 'visible' });
   await page.waitForTimeout(1000);
@@ -4331,7 +4335,7 @@ When("คลิกปุ่ม Save24", { timeout: 300000 }, async () => {
 
 //TC-SME-475 : ทดสอบปุ่ม Cancel ใน Warning//
 When("คลิกปุ่มไอคอนถังขยะ5", { timeout: 300000 }, async () => {
-  const moreIcon = page.getByRole('row', { name: '2 t11 t1 , a On Premise 24/12' }).locator('a')
+  const moreIcon = page.getByRole('row', { name: /^2 t11/ }).locator('a');
   await moreIcon.hover();
   await page.getByRole('menu').waitFor({ state: 'visible' });
   await page.waitForTimeout(1000);
@@ -4344,7 +4348,7 @@ When("คลิกปุ่ม Cancel41", { timeout: 300000 }, async () => {
 
 //TC-SME-476 : ทดสอบปุ่ม Confirm ใน Warning//
 When("คลิกปุ่มไอคอนถังขยะ6", { timeout: 300000 }, async () => {
-  const moreIcon = page.getByRole('row', { name: '2 t11 t1 , a On Premise 24/12' }).locator('a')
+  const moreIcon = page.getByRole('row', { name: /^2 t11/ }).locator('a');
   await moreIcon.hover();
   await page.getByRole('menu').waitFor({ state: 'visible' });
   await page.waitForTimeout(1000);

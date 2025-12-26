@@ -1629,7 +1629,7 @@ Feature: SME Factory_OEM Management
     When คลิกปุ่ม View2
 
   Scenario: TC-SME-462 : ทดสอบปุ่ม Cancel ใน View
-    When คลิก User
+    When คลิกปุ่ม Cancel38
 
   Scenario: TC-SME-463 : ทดสอบการปุ่ม Delete ในหน้า New Company Edit - User Group (Edit)
     When คลิกจุด 3 จุด7
