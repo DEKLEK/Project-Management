@@ -1342,7 +1342,6 @@ When("ใส่ไฟล์ เอกสาร ภพ.202", { timeout: 300000 },
   await page.locator('#button_close_alert').click();
 });
 
-
 When("คลิกปุ่ม ต่อ MA2", { timeout: 300000 }, async () => {
   await page.getByRole('button', { name: 'sync ต่อ MA' }).click();
 });
@@ -1615,9 +1614,9 @@ When("คลิกปุ่ม Confirm3", { timeout: 300000 }, async () => {
 //TC-SME-153 : ทดสอบปุ่ม Save ในหน้า New Company Edit - User - User Add//
 When("คลิกปุ่ม Save8", { timeout: 300000 }, async () => {
   await page.getByRole('button', { name: 'plus Add' }).click();
-  await page.locator('#input_text_').fill('43');
-  await page.locator('#input_text_iu-name-input').first().fill('43');
-  await page.locator('#input_text_iu-last-name-input').fill('43');
+  await page.locator('#input_text_').fill('45');
+  await page.locator('#input_text_iu-name-input').first().fill('45');
+  await page.locator('#input_text_iu-last-name-input').fill('45');
   await page.locator('.ant-select-selector').first().click();
   await page.getByText('หญิง').click();
   await page.getByRole('textbox', { name: 'Select date' }).click();
@@ -3050,7 +3049,7 @@ When("กรอกข้อมูล Fill : Remark4", { timeout: 300000 }, async
 });
 
 When("กรอกข้อมูล Fill : Contact Number2", { timeout: 300000 }, async () => {
-  await page.locator('#input_telformat_iu-tel-input').fill('147-258-369');
+  await page.locator('#input_telformat_iu-tel-input').fill('147-258-3690');
 });
 
 When("กรอกข้อมูล Fill : Email4", { timeout: 300000 }, async () => {

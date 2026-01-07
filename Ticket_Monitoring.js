@@ -84,9 +84,9 @@ When("เข้าสู่ระบบ Ticket Monitoring3", { timeout: 300000 }
     await page.getByRole('textbox', { name: 'Enter your password' }).fill('123456');
     await page.getByRole('button', { name: 'Sign in' }).click();
     await page.locator('div').filter({ hasText: /^Komatsuสำนักงานใหญ่$/ }).nth(1).click();
-    await page.getByRole('button', { name: 'close' }).click();
-    await page.waitForTimeout(1000);
-    await page.getByRole('button', { name: 'close' }).click();
+    // await page.getByRole('button', { name: 'close' }).click();
+    // await page.waitForTimeout(1000);
+    // await page.getByRole('button', { name: 'close' }).click();
     await page.getByRole('button', { name: 'ปิด' }).click();
     await page.getByRole('menuitem', { name: 'Ticket Management Center' }).click();
     await page.getByRole('menuitem', { name: 'Ticket Monitoring' }).click();
@@ -154,9 +154,9 @@ When("เข้าสู่ระบบ Ticket Monitoring6", { timeout: 300000 }
     await page.getByRole('textbox', { name: 'Enter your password' }).fill('123456');
     await page.getByRole('button', { name: 'Sign in' }).click();
     await page.locator('div').filter({ hasText: /^Komatsuสำนักงานใหญ่$/ }).nth(1).click();
-    await page.getByRole('button', { name: 'close' }).click();
-    await page.waitForTimeout(1000);
-    await page.getByRole('button', { name: 'close' }).click();
+    // await page.getByRole('button', { name: 'close' }).click();
+    // await page.waitForTimeout(1000);
+    // await page.getByRole('button', { name: 'close' }).click();
     await page.getByRole('button', { name: 'ปิด' }).click();
     await page.getByRole('menuitem', { name: 'Ticket Management Center' }).click();
     await page.getByRole('menuitem', { name: 'Ticket Monitoring' }).click();

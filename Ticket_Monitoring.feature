@@ -753,22 +753,26 @@ Feature: Ticket_Monitoring
     When กรอกข้อความ Type your message...
     When เลือกไฟล์ส่งมา 3 ไฟล์
     When กดส่งข้อความ
-  # Scenario: TM_121 : ทดสอบการแก้ไขข้อความและหลายไฟล์ ในช่อง comment
-  #   When เข้าสู่ระบบ Ticket Monitoring19
-  #   When กดปุ่ม Search107 ของหน้า Ticket
-  #   When เลือกดูข้อมูลใน Latest Tickets Created12
-  #   When แก้ไขข้อความ Type your message...
-  #   When เลือกไฟล์ใหม่ส่งมา 3 ไฟล์
-  #   When กด Save
-  # Scenario: TM_122 : ทดสอบลบ comment
-  #   When เข้าสู่ระบบ Ticket Monitoring20
-  #   When กดปุ่ม Search108 ของหน้า Ticket
-  #   When เลือกดูข้อมูลใน Latest Tickets Created13
-  #   When กดปุ่มถังขยะ
-  # Scenario: TM_123 : ทดสอบการกดปุ่ม Cancel หน้าการแจ้งเตือน
-  #   When กดปุ่ม Cancel
-  # Scenario: TM_124 : ทดสอบการกดปุ่ม Confirm หน้าการแจ้งเตือน
-  #   When กดปุ่ม Confirm 
+
+  Scenario: TM_121 : ทดสอบการแก้ไขข้อความและหลายไฟล์ ในช่อง comment
+    When เข้าสู่ระบบ Ticket Monitoring19
+    When กดปุ่ม Search107 ของหน้า Ticket
+    When เลือกดูข้อมูลใน Latest Tickets Created12
+    When แก้ไขข้อความ Type your message...
+    When เลือกไฟล์ใหม่ส่งมา 3 ไฟล์
+    When กด Save
+
+  Scenario: TM_122 : ทดสอบลบ comment
+    When เข้าสู่ระบบ Ticket Monitoring20
+    When กดปุ่ม Search108 ของหน้า Ticket
+    When เลือกดูข้อมูลใน Latest Tickets Created13
+    When กดปุ่มถังขยะ
+
+  Scenario: TM_123 : ทดสอบการกดปุ่ม Cancel หน้าการแจ้งเตือน
+    When กดปุ่ม Cancel
+
+  Scenario: TM_124 : ทดสอบการกดปุ่ม Confirm หน้าการแจ้งเตือน
+    When กดปุ่ม Confirm
 
   Scenario: TM_125 : ทดสอบการแสดงผล Last 10 User Chats
     When เข้าสู่ระบบ Ticket Monitoring21
